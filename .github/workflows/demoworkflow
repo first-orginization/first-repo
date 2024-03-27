@@ -1,0 +1,7 @@
+name: demoworkflow
+on: workflow_run
+jobs:
+ printing:
+  runs-on: ubuntu-latest
+  steps:
+    - run: echo {{ secrets.DEMO_SECRET }}
